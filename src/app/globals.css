@@ -25,3 +25,15 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  background: white;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
