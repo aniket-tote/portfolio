@@ -49,11 +49,6 @@ export function SourceControl({
         <span className="font-bold">SOURCE CONTROL</span>
       </div>
       <File
-        name="pages.tsx"
-        isActive={activeTab === "pages"}
-        onClick={() => openTab("pages")}
-      />
-      <File
         name="social-media.tsx"
         isActive={activeTab === "social-media"}
         onClick={() => openTab("social-media")}

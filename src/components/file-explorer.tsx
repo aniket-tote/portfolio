@@ -44,7 +44,7 @@ export function FileExplorer({
   if (!isVisible) return null;
 
   return (
-    <div className="bg-[#15232d] w-48 py-2 text-[#CCCCCC]">
+    <div className="bg-[#15232d] w-48 py-2 text-[#CCCCCC] border-r border-[#0d3a58]">
       <div className="flex items-center space-x-2 mb-2 px-4 py-2">
         <span className="font-bold">PORTFOLIO</span>
       </div>

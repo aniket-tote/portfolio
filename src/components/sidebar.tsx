@@ -45,7 +45,7 @@ export function Sidebar({
   };
 
   return (
-    <div className="bg-[#122738] w-12 flex flex-col">
+    <div className="bg-[#122738] w-12 flex flex-col border-r border-[#0d3a58]">
       <SidebarItem
         icon={FileIcon}
         isActive={activeItem === "explorer"}
