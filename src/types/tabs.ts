@@ -1,8 +1,10 @@
 export type Tab =
-  | "about"
-  | "projects"
-  | "experience"
-  | "education"
-  | "pages"
-  | "social-media"
-  | "competitive-programming";
+  | "about.tsx"
+  | "projects.tsx"
+  | "experience.tsx"
+  | "education.tsx"
+  | "social-media.tsx"
+  | "package.json"
+  | "README.md"
+  | "tsconfig.ts"
+  | "competitive-programming.tsx";
