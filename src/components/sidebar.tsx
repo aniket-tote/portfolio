@@ -13,7 +13,7 @@ const SidebarItem = ({
   onClick,
 }: SidebarItemProps) => (
   <div
-    className={`p-3  hover:text-white cursor-pointer ${
+    className={`p-3 hover:text-white cursor-pointer ${
       isActive ? "border-l text-white" : "text-[#aaa]"
     }`}
     onClick={onClick}
