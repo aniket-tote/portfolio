@@ -1,14 +1,14 @@
-import type { FC } from "react"
-import Image from "next/image"
+import type { FC } from "react";
+import Image from "next/image";
 
 interface Skill {
-  name: string
-  logo: string
+  name: string;
+  logo: string;
 }
 
 const skills: Record<string, Skill[]> = {
   Backend: [
-    { name: "Java", logo: 'assets/java-icon.svg' },
+    { name: "Java", logo: "assets/java-icon.svg" },
     { name: "Spring", logo: "assets/springio-icon.svg" },
     { name: "Spring Boot", logo: "assets/spring-boot.svg" },
     { name: "Spring Security", logo: "assets/spring-security.svg" },
@@ -35,7 +35,7 @@ const skills: Record<string, Skill[]> = {
   ],
   DevOps: [
     { name: "Docker", logo: "assets/docker-icon.svg" },
-    { name: "AWS", logo: "assets/aws-icon.svg" },
+    { name: "AWS", logo: "assets/AWS-Logo.svg" },
     { name: "Linux", logo: "assets/linux-icon.svg" },
     { name: "Git", logo: "assets/git-scm-icon.svg" },
     { name: "Jenkins", logo: "assets/jenkins-icon.svg" },
@@ -43,28 +43,28 @@ const skills: Record<string, Skill[]> = {
   ],
   Additional: [
     // { name: "Microservices", logo: Server },
-    { name: "JUnit", logo: "/junit-icon.svg" },
-    { name: "Mockito", logo: "/mockito-icon.svg" },
+    { name: "JUnit", logo: "assets/JUnit.svg" },
+    { name: "Mockito", logo: "/assets/mockito.png" },
     { name: "Maven", logo: "assets/apache_maven-icon.svg" },
     { name: "Gradle", logo: "assets/gradle-icon.svg" },
     // { name: "Agile/Scrum", logo: Globe },
   ],
-}
+};
 
 const SkillCard: FC<Skill> = ({ name, logo }) => {
   return (
     <div className="flex flex-col items-center p-4 gap-3">
-      <Image 
+      <Image
         src={logo}
-        alt={name} 
-        height={20} 
-        width={20} 
-        className="w-12 h-12 mb-2" 
+        alt={name}
+        height={20}
+        width={20}
+        className="w-12 h-12 mb-2"
       />
       <span className="text-sm font-medium text-blue-100">{name}</span>
     </div>
-  )
-}
+  );
+};
 
 export default function Skills() {
   return (
@@ -73,7 +73,7 @@ export default function Skills() {
       {Object.entries(skills).map(([category, categorySkills]) => (
         <div key={category} className="mb-8">
           <h2 className="text-2xl font-semibold mb-2">{category}</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4">
             {categorySkills.map((skill) => (
               <SkillCard key={skill.name} {...skill} />
             ))}
@@ -81,6 +81,5 @@ export default function Skills() {
         </div>
       ))}
     </div>
-  )
+  );
 }
-

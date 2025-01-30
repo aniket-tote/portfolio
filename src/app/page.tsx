@@ -22,8 +22,8 @@ import localFont from "next/font/local";
 const cascadia = localFont({ src: "../fonts/CascadiaCode.ttf" });
 
 export default function Home() {
-  const [openTabs, setOpenTabs] = useState<Tab[]>(["about.tsx"]);
-  const [activeTab, setActiveTab] = useState<Tab | null>("about.tsx");
+  const [openTabs, setOpenTabs] = useState<Tab[]>(["skills.tsx"]);
+  const [activeTab, setActiveTab] = useState<Tab | null>("skills.tsx");
   const [isExplorerVisible, setIsExplorerVisible] = useState(true);
   const [isSourceControlVisible, setIsSourceControlVisible] = useState(false);
 
